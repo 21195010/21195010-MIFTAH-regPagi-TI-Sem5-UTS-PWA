@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hello World">
+  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+  <div id="page-wrap">
+    
+    <img src="images/saya 2.jpg" alt="Photo of Cthulu" id="pic" />
+
+    <div id="contact-info" class="vcard">
+    
+        <!-- Microformats! -->
+    
+        <h1 class="fn">Muhammad Miftakhudin</h1>
+    
+        <p>
+            Cell : <a class="whatsapp" href="https://wa.me/qr/VIZU7SSRVJVCO1">0858-7897-4112</span></a><br>
+            Instagram : <a class="Instagram" href="https://instagram.com/muh_mfth?igshid=YTQwZjQ0NmI0OA==">muh_mfth</a>
+        </p>
+    </div>
+            
+    <div id="objective">
+        <p>
+          Saya Muhammad Miftakhudin, Mahasiswa semester 5 di STMIK Tegal, berusia 20 tahun, anak kedua dari dua bersaudara, tinggal di Jl. Kemuning, Tegal. Saya senang bersepeda dan bermain game. Saya menyeimbangkan kuliah dan pekerjaan untuk meraih kesuksesan di masa depan, sambil tetap menjalani hobi-hobi yang saya nikmati. 
+        </p>
+    </div>
+    
+    <div class="clear"></div>
+    
+    <dl>
+        <dd class="clear"></dd>
+        
+        <dt>About</dt>
+        <dd>
+            <p><strong>NIM :</strong> 21195010<br />
+              <strong>Kelas :</strong> Reguler Pagi ( Teknik Informatika )<br />
+              <strong>Semester :</strong> 5<br />
+              <strong>Mata Kuliah :</strong> Pemrograman Perangkat Bergerak<br />
+               <strong>Tujuan Belajar :</strong> Ingin Mengetahui dan Mempelajari apa itu PWA</p>
+        </dd>
+        <dd class="clear"></dd>
+        
+        <dt>Education</dt>
+        <dd>
+            <h2>Pendidikan</h2>
+            <p><strong>TK :</strong> TK Pertiwi<br />
+              <strong>SD :</strong> Mangkukusuman 9<br />
+              <strong>SMP :</strong> SMPN 1 Tegal<br />
+              <strong>SMK :</strong> SMK YPT<br />
+               <strong>Kuliah:</strong> STMIK Tegal</p>
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>Experience</dt>
+        <dd>
+            <h2>Bengkel</h2>
+            <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
+            
+            <h2>Computer skills</h2>
+            <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>Experience</dt>
+        <dd>
+            <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
+            <ul>
+                <li>Inspired and won highest peasant death competition among servants</li>
+                <li>Helped coordinate managers to grow cult following</li>
+                <li>Provided untimely deaths to all who opposed</li>
+            </ul>
+            
+            <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
+            <ul>
+                <li>Worked on grass-roots promotional campaigns</li>
+                <li>Reduced theft and property damage percentages</li>
+                <li>Janitorial work, Laundry</li>
+            </ul> 
+        </dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>Hobbies</dt>
+        <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+        
+        <dd class="clear"></dd>
+        
+        <dt>References</dt>
+        <dd>Available on request</dd>
+        
+        <dd class="clear"></dd>
+
+        <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <h1 class="title pb-3 mb-5">KRITIK DAN SARAN</h1>
+<p class="mb-4">Masukan kritik maupun saran anda dibawah  <a href="#">Download Now</a></p>
+<form id="commentForm">
+    <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+    <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+    <label for="komentar">Input Komentar :</label><br>
+        <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea><br><br>
+    <input type="submit" value="Kirim Komentar">
+</form>
+        </section>
+    </dl>
+    
+    <div class="clear"></div>
+
+    
+
+</div>
+  <script src="js/main.js"></script>
+  <script src="/indexDB.js"></script>
+  <script>
+    // Minta izin notifikasi
+if ('Notification' in window) {
+  Notification.requestPermission()
+    .then(function (permission) {
+      if (permission === 'granted') {
+        showNotification('Selamat datang!', 'Terima kasih telah menggunakan PWA ini Lerr.'); 
+        alert('Terima kasih Bro');
+      }
+      else if (permission === 'denied') {
+        // Izin diblokir
+        alert('Mampus diblokir');
+    }
+
+    
+    });
+    
+}
+
+// Fungsi untuk menampilkan notifikasi
+function showNotification(title, message) {
+  if ('Notification' in window && Notification.permission === 'granted') {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.showNotification(title, {
+        body: message,
+        icon: 'icon.png'
+      });
+    });
+  }
+}
+  </script>
+</body>
+</html>
